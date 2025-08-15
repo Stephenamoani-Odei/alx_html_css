@@ -19,3 +19,4 @@ SmileSchool is an interactive learning platform dedicated to helping people mast
 ```bash
 git clone https://github.com/AndohBlay/alx_html_css.git
 >>>>>>> 5d8a9fe (Initial commit)
+
