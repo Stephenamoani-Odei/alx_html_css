@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* General Body Styling */
+body {
+  background-color: #05011a;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Hero Background Image */
+.first-box {
+  background-image: url(/headphones/images/headphones_hero_1.jpg);
+  min-height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Navigation */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+}
+
+.logo-box {
+  margin-left: 20px;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.nav-bar li {
+  list-style: none;
+}
+
+.nav-bar li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+}
+
+.nav-bar li a:hover,
+.nav-bar li a:active {
+  color: #ff6565;
+  opacity: 0.9;
+  text-decoration: underline 2px solid wheat;
+}
+
+/* Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: white;
+  margin: 4px 0;
+  border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .nav-bar ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    left: 0;
+   background: transparent;
+   gap: 20px;
+    flex-direction: column;
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+    text-align: center;
+  }
+
+  .nav-bar ul li{
+    padding: 20px;
+  }
+  .nav-bar ul.show {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .loream-section h2{
+    margin-top: 90px;
+    text-align: center;
+    font-size: 5px;
+  }
+
+
+}
+
+
+@media (max-width: 480px) {
+  .nav-bar ul {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(5, 1, 26, 0.95);
+    flex-direction: column;
+    width: 200px;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  .nav-bar ul.show {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+/* Hero Section Content */
+.loream-section {
+  color: white;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 120px 20px;
+}
+
+.loream-section h2 {
+  font-size: 30px;
+}
+
+.loream-section h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.loream-section p {
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.loream-section button {
+  padding: 18px 16px;
+  width: 175px;
+  margin: 20px auto;
+  color: white;
+  background-color: #ff6565;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.loream-section button:hover {
+  background-color: #ff6565;
+  opacity: 0.9;
+}
+
+@media (max-width: 480px) {
+  .loream-section {
+    padding: 60px 10px;
+  }
+
+  .loream-section h2 {
+    font-size: 20px;
+  }
+
+  .loream-section h3 {
+    font-size: 13px;
+  }
+
+  .loream-section p {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .loream-section button {
+    width: 140px;
+    padding: 12px 10px;
+    font-size: 13px;
+  }
+}
